@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SocialBook</title>
+    <!-- Links CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <!-- Creating a Navigation Bar -->
+    <nav>
+        <div class="nav-left">
+            <img src="Images/logo.png" class="logo" alt="Logo PNG">
+            <ul>
+                <li><img src="images/notification.png" alt="Notification PNG"></li>
+                <li><img src="Images/inbox.png" alt="Inbox PNG"></li>
+                <li><img src="images/video.png" alt="Video PNG"></li>
+            </ul>
+        </div>
+
+        <!-- Navigation Right Bar -->
+        <div class="nav-right">
+            <div class="search-box">
+                <img src="images/search.png" alt="Search PNG">
+                <input type="text" placeholder="Search...">
+            </div>
+
+            <!-- User Profile Picture -->
+            <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+                <img src="images/profile-pic.png" alt="Profile Pic PNG">
+            </div>
+        </div>
+
+        <!-- Settings Menu -->
+        <div class="settings-menu">
+
+            <!-- Dark Mode BTN -->
+            <div id="dark-btn">
+                <span></span>
+            </div>
+            
+            <div class="settings-menu-inner">
+                <div class="user-profile">
+                    <img src="images/profile-pic.png" alt="Profile pic png">
+                    <div>
+                        <p>John Nicholson</p>
+                        <a href="#">See your profile</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="user-profile">
+                    <img src="images/feedback.png" alt="Feedback png">
+                    <div>
+                        <p>Give Feedback</p>
+                        <a href="#">Help us to improve the new design</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="setting-links">
+                    <img src="images/setting.png" class="settings-icon" alt="Settings png">
+                    <a href="#">Settings & Privacy <img src="images/arrow.png" alt="Arrow PNG" width="10px"></a>
+                </div>
+                <div class="setting-links">
+                    <img src="images/help.png" class="settings-icon" alt="Settings png">
+                    <a href="#">Help & Support <img src="images/arrow.png" alt="Arrow PNG" width="10px"></a>
+                </div>
+                <div class="setting-links">
+                    <img src="images/display.png" class="settings-icon" alt="Settings png">
+                    <a href="#">Display & Accessibility<img src="images/arrow.png" alt="Arrow PNG" width="10px"></a>
+                </div>
+                <div class="setting-links">
+                    <img src="images/logout.png" class="settings-icon" alt="Settings png">
+                    <a href="#">Logout<img src="images/arrow.png" alt="Arrow PNG" width="10px"></a>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <!-- Left Side Bar -->
+        <div class="left-sidebar">
+            <div class="imp-links">
+                <a href="#"><img src="images/news.png" alt="News PNG">Latest News</a>
+                <a href="#"><img src="images/friends.png" alt="News PNG">Friends</a>
+                <a href="#"><img src="images/group.png" alt="News PNG">Groups</a>
+                <a href="#"><img src="images/marketplace.png" alt="News PNG">Marketplace</a>
+                <a href="#"><img src="images/watch.png" alt="News PNG">Watch</a>
+                <a href="#">See More</a>
+            </div>
+
+            <!-- Shortcut Links -->
+            <div class="shortcut-links">
+                <p>Your Shortcuts</p>
+                <a href="#"><img src="images/shortcut-1.png" alt="Shortcut1 png">Web Developer</a>
+                <a href="#"><img src="images/shortcut-2.png" alt="Shortcut1 png">Web Design Course</a>
+                <a href="#"><img src="images/shortcut-3.png" alt="Shortcut1 png">Full Stack Development</a>
+                <a href="#"><img src="images/shortcut-4.png" alt="Shortcut1 png">Website Experts</a>
+            </div>
+        </div>
+        <!-- Ending of the Left Side Bar -->
+
+
+        <!-- Starting of the Main Content -->
+        <div class="main-content">
+            <div class="story-gallery">
+                <div class="story story1">
+                    <img src="images/upload.png" alt="Upload png">
+                    <p>Post Story</p>
+                </div>
+                <div class="story story2">
+                    <img src="Images/member-1.png" alt="Member 1">
+                    <p>Alison</p>
+                </div>
+                <div class="story story3">
+                    <img src="images/member-2.png" alt="Member 2 png">
+                    <p>Jackson</p>
+                </div>
+                <div class="story story4">
+                    <img src="images/member-3.png" alt="Member 3 png">
+                    <p>Samona</p>
+                </div>
+                <div class="story story5">
+                    <img src="images/member-4.png" alt="Member 4 png">
+                    <p>John Doe</p>
+                </div>
+            </div>
+
+            <div class="write-post-container">
+                <div class="user-profile">
+                    <img src="images/profile-pic.png" alt="Profile Pic">
+                    <a href="#"><i class='bx bx-dots-vertical-rounded'></i></a>
+                    <div>
+                        <p>John Nicholson</p>
+                        <small>Public<i class='bx bxs-down-arrow'></i></small>
+                    </div>
+                </div>
+
+                <div class="post-input-container">
+                    <textarea rows="3" placeholder="What's on your mind, John?"></textarea>
+                    <div class="add-post-links">
+                        <a href="#"><img src="images/live-video.png" alt="Live PNG">Live Video</a>
+                        <a href="#"><img src="images/photo.png" alt="Live PNG">Photo/Video</a>
+                        <a href="#"><img src="images/feeling.png" alt="Live PNG">Eeling/Activity</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- First Post -->
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/profile-pic.png" alt="">
+                        <div>
+                            <p>Alison</p>
+                            <span>June 24 2022, 13:40 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class='bx bx-dots-vertical-rounded'></i></a>
+                </div>
+
+                <p class="post-text">Subscribe <span><b>@CreativeBloke</b></span> YouTube channel to watch more videos
+                    on website development and UI design. <a href="#">#CreativeLearner</a></p>
+                <img src="images/feed-image-1.png" class="post-img" alt="Post Image">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like-blue.png" alt="Like BTN">120</div>
+                        <div><img src="images/comments.png" alt="Comment BTN">40</div>
+                        <div><img src="images/share.png" alt="Share BTN">20</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/profile-pic.png" alt="Profile Pic png"><i class='bx bx-caret-down'></i>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Second Post -->
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/profile-pic.png" alt="">
+                        <div>
+                            <p>John Doe</p>
+                            <span>June 25 2022, 13:40 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class='bx bx-dots-vertical-rounded'></i></a>
+                </div>
+
+                <p class="post-text">Subscribe <span><b>@CreativeBloke</b></span> YouTube channel to watch more videos
+                    on website development and UI design. <a href="#">#CreativeLearner</a></p>
+                <img src="images/feed-image-2.png" class="post-img" alt="Post Image">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like-blue.png" alt="Like BTN">120</div>
+                        <div><img src="images/comments.png" alt="Comment BTN">40</div>
+                        <div><img src="images/share.png" alt="Share BTN">20</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/profile-pic.png" alt="Profile Pic png"><i class='bx bx-caret-down'></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Third Post -->
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/profile-pic.png" alt="">
+                        <div>
+                            <p>Jack Song</p>
+                            <span>June 26 2022, 13:40 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class='bx bx-dots-vertical-rounded'></i></a>
+                </div>
+
+                <p class="post-text">Subscribe <span><b>@CreativeBloke</b></span> YouTube channel to watch more videos
+                    on website development and UI design. <a href="#">#CreativeLearner</a></p>
+                <img src="images/feed-image-3.png" class="post-img" alt="Post Image">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like-blue.png" alt="Like BTN">120</div>
+                        <div><img src="images/comments.png" alt="Comment BTN">40</div>
+                        <div><img src="images/share.png" alt="Share BTN">20</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/profile-pic.png" alt="Profile Pic png"><i class='bx bx-caret-down'></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Forth Post -->
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/profile-pic.png" alt="">
+                        <div>
+                            <p>Jackson</p>
+                            <span>June 27 2022, 13:40 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class='bx bx-dots-vertical-rounded'></i></a>
+                </div>
+
+                <p class="post-text">Subscribe <span><b>@CreativeBloke</b></span> YouTube channel to watch more videos
+                    on website development and UI design. <a href="#">#CreativeLearner</a></p>
+                <img src="images/feed-image-4.png" class="post-img" alt="Post Image">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like-blue.png" alt="Like BTN">120</div>
+                        <div><img src="images/comments.png" alt="Comment BTN">40</div>
+                        <div><img src="images/share.png" alt="Share BTN">20</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/profile-pic.png" alt="Profile Pic png"><i class='bx bx-caret-down'></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- More Load Post -->
+            <button type="button" class="lodd-more-btn">Load More</button>
+        </div>
+
+
+        <!-- Right Side Bar -->
+        <div class="right-sidebar">
+
+            <div class="sidebar-title">
+                <h4>Events</h4>
+                <a href="#">See All</a>
+            </div>
+
+            <!-- Events 01 -->
+            <div class="event">
+
+                <!-- Left Event -->
+                <div class="left-event">
+                    <h3>18</h3>
+                    <span>March</span>
+                </div>
+
+                <!-- Right Event -->
+                <div class="right-event">
+                    <h4>Social Media</h4>
+                    <p><i class='bx bxs-map'></i>&nbsp;Willson Tech Park</p>
+                    <a href="#">More info</a>
+                </div>
+            </div>
+
+            <!-- Events 02 -->
+            <div class="event">
+
+                <!-- Left Event -->
+                <div class="left-event">
+                    <h3>22</h3>
+                    <span>Jun</span>
+                </div>
+
+                <!-- Right Event -->
+                <div class="right-event">
+                    <h4>Mobile Marketing</h4>
+                    <p><i class='bx bxs-map'></i>&nbsp;Willson Tech Park</p>
+                    <a href="#">More info</a>
+                </div>
+            </div>
+
+            <div class="sidebar-title">
+                <h4>Advertisement</h4>
+                <a href="#">Close</a>
+            </div>
+            <img src="Images/advertisement.png" class="sidebar-ads" alt="Advertisement">
+
+
+            <div class="sidebar-title">
+                <h4>Conversation</h4>
+                <a href="#">Hide Chat</a>
+            </div>
+
+            <div class="online-list">
+                <div class="online">
+                    <img src="Images/member-1.png" alt="Member1 png">
+                </div>
+                <p>Alison Mina</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/member-2.png" alt="Member1 png">
+                </div>
+                <p>Jackson Aston</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/member-3.png" alt="Member1 png">
+                </div>
+                <p>Samona Rose</p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Foooter -->
+    <div class="footer">
+        <p>!! Copyright 2022 - SocialBook Social Medai Site !!</p>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
